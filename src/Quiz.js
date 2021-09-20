@@ -1,11 +1,11 @@
-import React from "react";
-import quizData from "./quiz_data.json";
+import React, { Component } from "react";
+let quizData = require("./quiz_data.json");
 
-class Quiz extends React.Component {
+class Quiz extends Component {
 	constructor(props) {
 		super(props);
 		this.state = {
-			quiz_position: 1,
+			quiz_position: 0,
 		};
 	}
 	render() {
